@@ -1,4 +1,4 @@
-Krok 1 — połączenie zdalne
+## Krok 1 — połączenie zdalne
 
 $cred = Get-Credential            # konto z prawami admina lokalnego na stacji
 $comp = 'NAZWA-STACJI'            # nazwa NetBIOS / FQDN / IP
@@ -7,7 +7,7 @@ Test-WSMan -ComputerName $comp    # sprawdzenie, czy WinRM odpowiada
 
 Jeśli Test-WSMan zwróci błąd — WinRM na stacji nie jest włączony. W domenie włącz go GPO (Computer Configuration > Policies > Administrative Templates > Windows Remote Management (WinRM) > WinRM Service > Allow remote server management).
 
-Krok 2 — uruchomienie skryptu na stacji
+## Krok 2 — uruchomienie skryptu na stacji
 
 Wariant A (najprościej, domyślne parametry — czysta instalacja, lang=pl). Pobieranie i instalacja wykonują się na stacji:
 
