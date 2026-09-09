@@ -18,7 +18,9 @@ Jeśli Test-WSMan zwróci błąd — WinRM na stacji nie jest włączony. W dome
 Wariant A (najprościej, domyślne parametry — czysta instalacja, lang=pl). Pobieranie i instalacja wykonują się na stacji:
 
 powershell
-```Invoke-Command -ComputerName $comp -Credential $cred -FilePath 'C:\Skrypty\Install-FirefoxESR.ps1' ```
+```
+Invoke-Command -ComputerName $comp -Credential $cred -FilePath 'C:\Skrypty\Install-FirefoxESR.ps1'
+```
 
 Wariant B (pełna kontrola parametrów, np. -Force albo -Proxy):
 
