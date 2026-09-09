@@ -1,3 +1,9 @@
+```powershell
+# Pobranie listy procesów i filtrowanie
+Get-Process | Where-Object {$_.CPU -gt 100}
+```
+
+
 ## Krok 1 — połączenie zdalne
 
 $cred = Get-Credential            # konto z prawami admina lokalnego na stacji
